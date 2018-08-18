@@ -2,8 +2,8 @@ import React from 'react';
 
 import './Header.css';
 import Logo from '../../assets/img/logo.png';
-import IconSprite from '../../assets/img/sprite.svg';
 import UserAvatar from '../../assets/img/user.jpg';
+import SVGIcon from '../UI/SVGIcon/SVGIcon';
 
 const header  = () => (
     <header className="header">
@@ -11,23 +11,17 @@ const header  = () => (
         <div action="#" className="search">
             <input type="text" className="search__input" placeholder="Search Hotels"/>
             <button className="search__button">
-                <svg className="search__icon">
-                    <use xlinkHref={`${IconSprite}#icon-magnifying-glass`} />
-                </svg>
+                <SVGIcon className="search__icon" icon="icon-magnifying-glass"/>
             </button>
         </div>
 
         <nav className="user-nav">
             <div className="user-nav__icon-box">
-                <svg className="user-nav__icon">
-                    <use xlinkHref={`${IconSprite}#icon-bookmark`} />
-                </svg>
+                <SVGIcon className="user-nav__icon" icon="icon-bookmark"/>
                 <span className="user-nav__notification">7</span>
             </div>
             <div className="user-nav__icon-box">
-                <svg className="user-nav__icon">
-                    <use xlinkHref={`${IconSprite}#icon-chat`} />
-                </svg>
+                <SVGIcon className="user-nav__icon" icon="icon-chat"/>
                 <span className="user-nav__notification">13</span>
             </div>
             <div className="user-nav__user">
