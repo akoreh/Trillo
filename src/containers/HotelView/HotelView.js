@@ -7,6 +7,8 @@ import Image3 from '../../assets/img/hotel-3.jpg';
 
 import Gallery from '../../components/Gallery/Gallery';
 import Overview from '../../components/Overview/Overview';
+import Details from '../../components/Details/Details';
+import CTA from '../../components/CTA/CTA';
 
 const hotelView = () => {
 
@@ -14,6 +16,8 @@ const hotelView = () => {
         <main className="hotel-view">
             <Gallery images={[Image1, Image2, Image3]}/>
             <Overview />
+            <Details />
+            <CTA />
         </main>
     );
 }
